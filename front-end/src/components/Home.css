@@ -1,0 +1,32 @@
+
+
+#homeChildOne{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#homeChildTwo{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+#homeChildThree{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+@media (max-width : 760px) {
+  #homeChildOne{
+  padding-left: 50px;
+  margin-top: 20px;
+  }
+  .col{
+    margin: 20px 0px;
+  }
+  #homeChildTwo{
+  padding-left: 50px;
+  margin-top: 20px;
+  }
+  #homeChildThree{
+  padding-left: 50px;
+  margin-top: 20px;
+  }
+}

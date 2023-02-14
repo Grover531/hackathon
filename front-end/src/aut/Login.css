@@ -1,0 +1,28 @@
+
+
+#loginDiv{
+  height: 100vh;
+  background-color: black;
+  padding: 50px;
+  color: white;
+}
+
+input{
+  width: 20%;
+}
+
+#formLog{
+  margin: 200px 500px; 
+  justify-content: center;
+}
+
+#logReg{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* @media(max-width: 1400px) {
+  #formLog{
+    margin: 100px 0px;
+  }
+} */
