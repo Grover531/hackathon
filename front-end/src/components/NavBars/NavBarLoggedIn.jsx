@@ -13,6 +13,7 @@ import BadgeAvatars from './BadgeAvatar';
 import Notification from './Notification';
 import { TabTitle } from "../../utils/GeneralFunction";
 
+
 function NavbarLoggedIn() {
 
   const context = useContext(DataProvider);
@@ -20,6 +21,7 @@ function NavbarLoggedIn() {
   const { tempValue } = context;
 
   TabTitle(tempValue.name)
+
 
   const navigate = useNavigate();
 
