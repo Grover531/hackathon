@@ -11,13 +11,17 @@ import { useNavigate } from 'react-router';
 import { DataProvider } from '../../context/Data';
 import BadgeAvatars from './BadgeAvatar';
 import Notification from './Notification';
+import { TabTitle } from "../../utils/GeneralFunction";
 
 
 function NavbarLoggedIn() {
 
   const context = useContext(DataProvider);
 
-  const { setLogged } = context;
+  const { tempValue } = context;
+
+  TabTitle(tempValue.name)
+
 
   const navigate = useNavigate();
 
@@ -26,7 +30,8 @@ function NavbarLoggedIn() {
   }
 
   return (
-    <>
+    <div>
+      <title />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -48,7 +53,7 @@ function NavbarLoggedIn() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <BadgeAvatars/>
+                  <BadgeAvatars />
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -76,7 +81,7 @@ function NavbarLoggedIn() {
           </Container>
         </Navbar>
       ))}
-    </>
+    </div>
   );
 }
 

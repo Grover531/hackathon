@@ -17,6 +17,7 @@ function Data({ children }) {
     const [password, setPassword] = useState('*************** ');
 
     const tempValue = {
+        name: 'Youssouf Yogue',
         email: 'yousyogue@gmail.com',
         password: 'Test1234'
     }
