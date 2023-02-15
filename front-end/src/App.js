@@ -12,8 +12,7 @@ import NavbarLoggedIn from './components/NavBars/NavBarLoggedIn';
 function App() {
   return (
     <BrowserRouter>
-      <NavbarLoggedIn />
-      {/* <NavBarStatus/> */}
+      <NavBarStatus/>
       <div className="App">
         <Routes>
           <Route path='/' element={<Home />} />
